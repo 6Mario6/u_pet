@@ -1,0 +1,47 @@
+<ion-view view-title="Mascota" hide-back-button="true">
+  <ion-content>
+  <div class="list card">
+    <ion-list class="list-inset">
+      <ion-item class="item item-body"
+        ng-repeat="item in pets | filter: {Nombre: whichpets }">
+        <img class="full-image" src="img/{{item.Nombre}}_tn.jpg" alt="{{item.Nombre}}Photo">
+        <p class="row">
+        <label class="col">
+         Nombre : {{item.Nombre}}
+        </label>
+        <label class="col">
+         ID: {{item.Numero}}
+        </label>
+        </p>
+        <p class="row">
+        <label class="col">
+         Propietario: {{item.Propietario}}
+        </label>
+        <label class="col">
+         Especie: {{item.Especie}}
+        </label>
+        </p>
+        <p class="row">
+        <label class="col">
+         Raza: {{item.Raza}}
+        </label>
+        <label class="col">
+         Sexo: {{item.Sexo}}
+        </label>
+        </p>
+         <p class="row">
+        <label class="col">
+         Fecha de nacimiento: 
+        </label>
+         <label class="col">
+         {{item.Fnacimiento}}
+        </label>
+        </p>
+         <button class="button button-royal button-block" ng-click="addToCart()"> 
+                    <i class="icon ion-checkmark"></i> Editar Mascota
+                </button>
+      </ion-item>
+    </ion-list>
+</div> 
+  </ion-content>
+</ion-view>

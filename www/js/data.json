@@ -1,0 +1,134 @@
+ {
+  "calendar": [
+    {
+      "Dia": "Lunes",
+      "title": "Comida",
+      "description": "Las comidas del dia",
+      "schedule": [
+        {
+          "time": "9:30-10:30am",
+          "shortname": "Jimmy",
+          "description": "El desayuno"
+
+        },{
+          "time": "6:00-6:30am",
+          "shortname": "Christopher",
+          "description": "El desayuno"
+
+        }, {
+          "time": "11:00am-1pm",
+          "shortname": "Jimmy",
+          "description": "Almuerzo"
+        },{
+          "time": "2:30-4:00pm",
+          "shortname": "Jimmy",
+          "description": "Cena"
+        },
+        {
+          "time": "6:30-7:00pm",
+          "shortname": "Fausto",
+          "description": "Cena"
+        }
+
+      ]
+    }, {
+      "Dia": "Martes",
+      "title": "Paseos",
+      "description": "Pasear las mascotas",
+      "schedule": [
+        {
+          "time": "9:30-10:30am",
+          "shortname": "Fausto",
+          "description": "caminar......."
+
+        }, {
+          "time": "11:00am-1pm",
+          "shortname": "Jimmy",
+          "description": "caminar......."
+        },{
+          "time": "2:30-4:00pm",
+          "shortname": "jezyna",
+          "description": "caminar......."
+        }
+      ]
+    }, {
+      "Dia": "Miercoles",
+      "title": "Comida",
+      "description": "Las comidas del dia",
+      "schedule": [
+        {
+          "time": "9:30-10:30am",
+          "shortname": "Jimmy",
+          "description": "El desayuno"
+
+        }, {
+          "time": "11:00am-1pm",
+          "shortname": "Jimmy",
+          "description": "Almuerzo"
+        },{
+          "time": "2:30-4:00pm",
+          "shortname": "Jimmy",
+          "description": "Cena"
+        }
+      ]
+    }, {
+      "Dia": "Jueves",
+      "title": "Comida",
+      "description": "Las comidas del dia",
+      "schedule": [
+        {
+          "time": "9:30-10:30am",
+          "shortname": "Jimmy",
+          "description": "El desayuno"
+
+        }, {
+          "time": "11:00am-1pm",
+          "shortname": "Jimmy",
+          "description": "Almuerzo"
+        },{
+          "time": "2:30-4:00pm",
+          "shortname": "Jimmy",
+          "description": "Cena"
+        }
+      ]
+    }
+  ],
+ "pets": [
+  { 
+    "Nombre":"Jimmy",
+    "Numero":"FDXB90",
+    "Propietario":"Mario Fernandez",
+    "Especie":"Perro",
+    "Raza":"Criollo",
+    "Sexo":"Masculino",
+    "Fnacimiento":"22 de Ocutubre 2013"
+  },
+  {
+    "Nombre":"Fausto",
+    "Numero":"FDXB91",
+    "Propietario":"Goethe",
+    "Especie":"Gato",
+    "Raza":"Criollo",
+    "Sexo":"Masculino",
+    "Fnacimiento":"11 de Noviembre 2013"
+  },
+  {
+    "Nombre":"Christopher",
+    "Numero":"FDXB92",
+    "Propietario":"Cornell",
+    "Especie":"Gato",
+    "Raza":"Criollo",
+    "Sexo":"Masculino",
+    "Fnacimiento":"1 de Enero 2006"
+  },
+  {
+    "Nombre":"jezyna",
+    "Numero":"FDXB93",
+    "Propietario":"Agniezka",
+    "Especie":"Puercoespín",
+    "Raza":"Ninguno",
+    "Sexo":"Femenino",
+    "Fnacimiento":"1 de Octubre 2013"
+   }
+  ]
+}
