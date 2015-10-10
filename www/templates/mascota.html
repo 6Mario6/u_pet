@@ -6,20 +6,24 @@
         <input type="search" ng-model="query" placeholder="Search">
       </lable>
  </div>
-  <ion-content  class="has-subheader">
+  <ion-content  class="has-subheader" on-refresh="onRefresh()">
     <ion-list show-reorder="data.showReorder">
-        <ion-item ng-repeat='item in pets | filter:query' class="item-thumbnail-left item-text-wrap" href="#app/mascota/{{item.Nombre}}">
-        <img src="img/{{item.Nombre}}_tn.jpg" alt="{{item.Nombre}}Photo">
-        <h2>{{item.Nombre}}</h2>
-        <h3>ID: {{item.Numero}}</h3>
-        <h3>Propietario: {{item.Propietario}}</h3>
-        <h3>Especie: {{item.Especie}}</h3>
-        <h3>Raza: {{item.Raza}}</h3>
-        <h3>Sexo: {{item.Sexo}}</h3>
-        <h3>Fecha de nacimiento: {{item.Fnacimiento}}</h3>
-        <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item,$fromIndex,$toIndex)">
-      </ion-reorder-button>
+        <ion-item ng-repeat='item in pets | filter:query' class="item-thumbnail-left item-text-wrap" href="#app/mascota/{{item.pet}}">
+        <img src="img/{{item.pet}}_tn.jpg" >
+        <h2>{{item.pet}}</h2>
+        <h3>ID: {{item.id}}</h3>
+        <h3>Propietario: {{item.owner}}</h3>
+        <h3>Especie: {{item.species}}</h3>
+        <h3>Raza: {{item.breed}}</h3>
+        <h3>Sexo: {{item.gender}}</h3>
+        <h3>Fecha de nacimiento: {{item.birthdate}}</h3>
       </ion-item>
       </ion-list>
+      <div class="card" >
+      <div class="item item-text-wrap" ng-show="noData"><span>
+         No hay mascotas agregadas. Click  <a href="javascript:" ng-click="newPet()">aqui</a> para ingresar mascota.
+         </span>
+      </div>
+   </div>
   </ion-content>
 </ion-view>
