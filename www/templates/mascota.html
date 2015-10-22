@@ -8,7 +8,7 @@
  </div>
   <ion-content  class="has-subheader" on-refresh="onRefresh()">
     <ion-list show-reorder="data.showReorder">
-        <ion-item ng-repeat='item in pets | filter:query' class="item-thumbnail-left item-text-wrap" href="#app/mascota/{{item.pet}}">
+        <ion-item ng-repeat='item in pets | filter:query' class="item-thumbnail-left item-text-wrap" >
         <img src="img/{{item.pet}}_tn.jpg" >
         <h2>{{item.pet}}</h2>
         <h3>ID: {{item.id}}</h3>

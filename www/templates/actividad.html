@@ -1,0 +1,44 @@
+<ion-view title="Actividades">
+<ion-content class="padding">
+
+<h5>Programa las actividades de tu mascota.</h5>
+<div class="list">
+    <a class="item item-avatar" href="#">
+      <img src="img/Christopher_tn.jpg">
+      <h2>Christopher</h2>
+      <p>mascota 1.</p>
+    </a>
+    <a class="item item-avatar" href="#">
+      <img src="img/Fausto_tn.jpg">
+      <h2>Fausto</h2>
+      <p>mascota 1.</p>
+    </a>
+</div>
+<div class="list">
+    <div class="item">
+        Hora
+        <ionic-time-picker etime="slots[0].epochTime" format="12" step="15">
+        <button class="button button-block button-stable overflowShow">
+            <standard-time-meridian etime='slots[0].epochTime'></standard-time-meridian>
+        </button>
+    </ionic-time-picker>
+    <label class="item item-input">
+    <span class="input-label">Fecha</span>
+      <input type="date">
+  </label>
+
+</div>
+   <div>
+     <label class="item item-input item-stacked-label">
+    <span class="input-label">Descripción</span>
+    <textarea type="text" placeholder="Hora del baño..." name="content" rows="10" ></textarea>
+  </label>
+   </div>
+  
+</div>
+<button class="button button-block button-positive">
+  Aceptar
+</button>
+</ion-content>
+</ion-view>
+
